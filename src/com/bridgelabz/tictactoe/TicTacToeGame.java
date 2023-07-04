@@ -29,7 +29,9 @@ public class TicTacToeGame {
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose the letter from 'X' or 'O:");
-        char letter = sc.nextLine().charAt(0);
+        char letter1 = sc.nextLine().charAt(0);
+        System.out.println("Choose the letter from 'X' or 'O:");
+        char letter2 = sc.nextLine().charAt(0);
     }
 
     public static void main(String[] args) {
