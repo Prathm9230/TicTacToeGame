@@ -1,6 +1,10 @@
 package com.bridgelabz.tictactoe;
+import java.util.Scanner;
+
 
 public class TicTacToeGame {
+    static char playerLetter = 'P';
+    static char CompLetter= 'C';
 
     private static char[] board;
     public static void makeboard()
@@ -21,9 +25,17 @@ public class TicTacToeGame {
         System.out.println(" "+board[4]+"|"+board[5]+"|"+board[6]);
         System.out.println(" "+board[7]+"|"+board[8]+"|"+board[9]);
     }
+    public static void ChooseLetter()//UC-2
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Choose the letter from 'X' or 'O:");
+        char letter = sc.nextLine().charAt(0);
+    }
+
     public static void main(String[] args) {
         makeboard();
         playermove(2,'X');
         show();
+        ChooseLetter();
     }
 }
